@@ -1,0 +1,116 @@
+body {
+    /* margin: -8px; */
+    background: url(Musashi-main-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position:relative;
+    top:0;
+    left:0;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.header-bg {
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    height: 140px;
+    position:sticky;
+}
+
+.header-logo {
+    position:absolute;
+    margin-top: 20px;
+}
+
+main {
+    position:relative;
+    width:100%;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.auction {
+    background: url(parchment-texture.jpg);
+    opacity: 0.95;
+    height: auto;
+    min-height: 500px;
+    width: 30%;
+    min-width: 600px;
+    position:relative;
+    margin-top: 50px;
+    left: 24.5%;
+    border: 2px solid black;
+    border-radius: 10px; 
+    animation-name: move;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+}
+
+.auction-title {
+    font-family: "Hina Mincho", serif;
+    font-weight: 450;
+    font-size: 40px;
+    line-height: 90%;
+    padding: 20px 15px;
+}
+
+.auction-subtitle {
+    font-family: "Hina Mincho", serif;
+    font-weight: 300;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.auction-image {
+    margin-top: 20px;
+    width: 50%;
+    height: auto;
+}
+
+.sold {
+    position: absolute;
+    left: 7%;
+    top: 38%;
+    font-size: 180px;
+    font-weight: 900;
+    color: red;
+    transform: rotate(-45deg);
+}
+
+.bidding-info {
+    list-style:none;
+    font-family: "Hina Mincho", serif;
+    font-weight: 300;
+    font-size: 22px;
+    font-style: italic;
+    margin-right: 20px;
+}
+
+.bid-input {
+    font-family: "Hina Mincho", serif;
+    font-weight: 300;
+    font-size: 18px;
+    margin-left: 22px;
+    margin-bottom: 16px;
+}
+
+.working-button:hover {
+ background-color: rgba(255, 166, 0, 0.384);
+ transition: 0.3s;
+}
+
+@keyframes move {
+    from {transform: translateX(-100%);}
+    to {transform:translateX(0);}
+}
